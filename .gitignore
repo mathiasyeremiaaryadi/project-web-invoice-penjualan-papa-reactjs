@@ -1,0 +1,19 @@
+# Dependensi & hasil build
+node_modules/
+dist/
+coverage/
+
+# Konfigurasi lokal
+.env
+.env.local
+.env.*.local
+
+# Log
+npm-debug.log*
+*.log
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

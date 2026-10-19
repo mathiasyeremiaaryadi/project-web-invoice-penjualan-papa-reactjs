@@ -1,0 +1,177 @@
+/* ===== Dasar ===== */
+html,
+body {
+  overflow-x: hidden; /* jaga-jaga: tidak ada scroll horizontal halaman */
+}
+
+body {
+  background-color: #f4f6f9;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.min-w-0 {
+  min-width: 0;
+}
+
+/* ===== Navbar ===== */
+.app-username {
+  max-width: 14rem;
+}
+
+/* ===== Login ===== */
+.login-page {
+  background: linear-gradient(160deg, #e7f0ff 0%, #f4f6f9 55%);
+}
+
+.login-card {
+  max-width: 420px;
+}
+
+.login-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* ===== Dashboard ===== */
+.stat-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .stat-value {
+    font-size: 1.2rem;
+  }
+}
+
+.rank-col {
+  width: 4rem;
+}
+
+.rank-badge {
+  min-width: 2rem;
+  font-size: 0.85rem;
+}
+
+.rank-gold {
+  background-color: #f5c518;
+  color: #3d2f00;
+}
+
+.rank-silver {
+  background-color: #c0c7d0;
+  color: #22272e;
+}
+
+.rank-bronze {
+  background-color: #cd7f32;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .date-range-filter {
+    min-width: 34rem;
+  }
+}
+
+/* ===== Daftar invoice ===== */
+.no-col {
+  width: 4rem;
+}
+
+.action-col {
+  width: 7rem;
+}
+
+.sort-btn {
+  white-space: nowrap;
+}
+
+th.text-end .sort-btn {
+  justify-content: flex-end;
+}
+
+/* ===== Form ===== */
+.form-page {
+  max-width: 640px;
+}
+
+/* ===== Toast: kanan atas (desktop), atas tengah (HP) ===== */
+.app-toast-container {
+  z-index: 1090;
+}
+
+@media (max-width: 767.98px) {
+  .app-toast-container {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .app-toast-container .toast {
+    width: 100%;
+  }
+}
+
+/* ===== HP: area sentuh minimal 44 × 44 px ===== */
+@media (max-width: 767.98px) {
+  .btn,
+  .form-control,
+  .form-select,
+  .input-group-text {
+    min-height: 44px;
+  }
+
+  .form-select-sm,
+  .btn-sm {
+    min-height: 44px;
+    font-size: 0.95rem;
+  }
+
+  .btn-icon {
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .navbar-nav .nav-link {
+    min-height: 44px;
+  }
+
+  .stat-value {
+    font-size: 1.35rem;
+  }
+}
+
+/* Bootstrap Collapse: filter selalu tampil di tablet & desktop. */
+@media (min-width: 768px) {
+  #invoice-filters.collapse:not(.show) {
+    display: block;
+  }
+}
